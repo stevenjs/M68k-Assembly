@@ -1,0 +1,88 @@
+{ "name": "M68k-Assembly",
+  "scopeName": "source.asm.m68k",
+  "fileTypes": ["s", "i", "asm"],
+  "patterns": [
+    { "match": "\"[^\"]*\"",
+      "name": "string.quoted.double.m68k"
+    },
+    { "match": "'[^']*'",
+      "name": "string.quoted.single.m68k"
+    },
+    { "match": ";[^\n]*\n",
+      "name": "comment.line.semicolon"
+    },
+    { "match": "(^|[ \t])\\*(?![+-])[^\n]*\n",
+      "name": "comment.line.asterisk"
+    },
+    { "match": "(?i)^([a-zA-Z0-9_][a-zA-Z0-9_\\.]*)(?=([ \t]*=|[ \t]+equ[ \t]+))",
+      "name": "meta.equate.m68k",
+      "captures": {
+        "1": { "name": "variable.other.symbol.m68k" }
+      }
+    },
+    { "match": "(?i)(^([a-zA-Z0-9_\\.]+)(:[ \t]*|[ \t]+)macro|^[ \t]+macro[ \t]+([a-zA-Z0-9_\\.]+))[ \t]*$",
+      "name": "meta.macro.m68k",
+      "captures": {
+        "2": { "name": "variable.other.macro.m68k" },
+        "4": { "name": "variable.other.macro.m68k" }
+      }
+    },
+    { "match": "(?i)\\bsection[ \t]+(\"[^\"]+\"|'[^']+'|[^,]+)",
+      "name": "meta.section.m68k",
+      "captures": {
+        "1": { "name": "meta.section.name.m68k" }
+      }
+    },
+    { "match": "^[a-zA-Z_]([a-zA-Z0-9_]*|[a-zA-Z0-9_\\.%\\$]*[a-zA-Z0-9_])(?=[ \t:])",
+      "name": "meta.label.global.m68k"
+    },
+    { "match": "(?<![a-zA-Z])\\$[0-9A-Fa-f]+\\b",
+      "name": "constant.numeric.hex.m68k"
+    },
+    { "match": "(?<![a-zA-Z])@[0-7]+\\b",
+      "name": "constant.numeric.octal.m68k"
+    },
+    { "match": "(?<![a-zA-Z])%[01]+\\b",
+      "name": "constant.numeric.binary.m68k"
+    },
+    { "match": "(?<![a-zA-Z])[+-]?[0-9]+\\b",
+      "name": "constant.numeric.decimal.m68k"
+    },
+    { "match": "(?i)\\b([ad][0-7]|SP|PC)\\b",
+      "name": "variable.language.register.m68k"
+    },
+    {
+      "match": "(?i)\\b(abcd|bchg|bclr|bset|chk|divs|divu|exg|jmp|jsr|lea|link|moveq|muls|mulu|nbcd|nop|pea|reset|rte|rtr|rts|sbcd|stop|swap|tas|trap|trapv|unlk)\\b",
+      "name": "keyword.other.opcode.m68k"
+    },
+    {
+      "match": "(?i)\\b(add|addi|addq|addx|and|andi|asl|asr|clr|cmp|cmpi|cmpm|eor|eori|lsl|lsr|move|neg|negx|not|or|ori|rol|ror|roxl|roxr|sub|subi|subq|subx|tst)(\\.[bwl])?\\b",
+      "name": "keyword.other.opcode.m68k"
+    },
+    {
+      "match": "(?i)\\b(adda|cmpa|ext|movea|movem|movep|suba)(\\.[wl])?\\b",
+      "name": "keyword.other.opcode.m68k"
+    },
+    {
+      "match": "(?i)\\bbtst(\\.[bl])?\\b",
+      "name": "keyword.other.opcode.m68k"
+    },
+    {
+      "match": "(?i)\\b(bsr|bra|b(cs|lo|ls|eq|ne|hi|cc|hs|lt|le|eq|ne|gt|ge|pl|mi|vc|vs))(\\.[bsw])?\\b",
+      "name": "keyword.other.opcode.branch.m68k"
+    },
+    {
+      "match": "(?i)\\bdb(cs|lo|ls|eq|ne|hi|cc|hs|lt|le|eq|ne|gt|ge|pl|mi|vc|vs|f|t|ra)\\b",
+      "name": "keyword.other.opcode.dbcc.m68k"
+    },
+    {
+      "match": "(?i)\\bdb(cs|lo|ls|eq|ne|hi|cc|hs|lt|le|eq|ne|gt|ge|pl|mi|vc|vs|f|t)\\b",
+      "name": "keyword.other.opcode.scc.m68k"
+    },
+    {
+      "match": "(?i)\\billegal\\b",
+      "name": "invalid.illegal.opcode.m68k"
+    }
+  ],
+  "uuid": "fe8dd09c-dc33-41eb-83d4-4cc6ed720ad2"
+}

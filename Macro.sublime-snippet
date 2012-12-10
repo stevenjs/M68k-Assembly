@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[${1:macro_name} MACRO
+        ${2:; body...}
+        ENDM
+        ]]></content>
+    <tabTrigger>macro</tabTrigger>
+    <scope>source.asm.m68k</scope>
+    <description>Macro</description>
+</snippet>
