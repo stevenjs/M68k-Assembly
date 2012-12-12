@@ -21,6 +21,14 @@ Manual installation without git:
     cd /path/to/sublime/packages/folder
     curl -L https://github.com/stevenjs/M68k-Assembly/tarball/master | tar xf -
 
+### Contributing
+
+You can send pull requests via GitHub. Do *not* edit the
+`M68k-Assembly.tmLanguage` file directly. Edit the
+`M68k-Assembly.JSON-tmLanguage` file instead and build the `.tmLanguage` file
+from it using the _JSON to Property List_ build tool in
+[AAAPackageDev](https://github.com/SublimeText/AAAPackageDev).
+
 ### License
 
 **M68k-Assembly Copyright © 2012 Steven Saunders**
