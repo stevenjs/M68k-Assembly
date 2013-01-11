@@ -48,7 +48,7 @@
     { "match": "(?<![a-zA-Z])[+-]?[0-9]+\\b",
       "name": "constant.numeric.decimal.m68k"
     },
-    { "match": "(?i)\\b([ad][0-7]|SP|PC|vbr)\\b",
+    { "match": "(?i)\\b([ad][0-7]|SP|PC|vbr|fp[0-7])\\b",
       "name": "variable.language.register.m68k"
     },
     {
@@ -86,6 +86,26 @@
     {
       "match": "(?i)\\billegal\\b",
       "name": "invalid.illegal.opcode.m68k"
+    },
+    {
+      "match": "(?i)\\bf(abs|acos|add|asin|atan|atanh|cmp|cos|cosh|dadd|ddiv|dmul|div|dsub|etox|etoxm1|getexp|getman|int|intrz|log10|log2|logn|lognp1|mod|move|movecr|movem|mul|neg|nop|rem|restore|sadd|save|scale|sdiv|sgldiv|sglmul|sin|sincos|sinh|smul|sqrt|ssub|sub|tan|tanh|tentox|tst|twotox)(\\.[bwlsdx])?\\b",
+      "name": "keyword.other.opcode.fpu.m68k"
+    },
+    {
+      "match": "(?i)\\bfb(cs|lo|ls|eq|ne|hi|cc|hs|lt|le|eq|ne|gt|ge|pl|mi|vc|vs)(\\.[bsw])?\\b",
+      "name": "keyword.other.opcode.fpu.branch.m68k"
+    },
+    {
+      "match": "(?i)\\bfdb(cs|lo|ls|eq|ne|hi|cc|hs|lt|le|eq|ne|gt|ge|pl|mi|vc|vs|f|t|ra)(\\.[bsw])?\\b",
+      "name": "keyword.other.opcode.fpu.dbcc.m68k"
+    },
+    {
+      "match": "(?i)\\bfs(cs|lo|ls|eq|ne|hi|cc|hs|lt|le|eq|ne|gt|ge|pl|mi|vc|vs|f|t)\\b",
+      "name": "keyword.other.opcode.fpu.scc.m68k"
+    },
+    {
+      "match": "(?i)\\bftrap(cs|lo|ls|eq|ne|hi|cc|hs|lt|le|eq|ne|gt|ge|pl|mi|vc|vs|f|t)\\b",
+      "name": "keyword.other.opcode.fpu.ftrapcc.m68k"
     }
   ],
   "uuid": "fe8dd09c-dc33-41eb-83d4-4cc6ed720ad2"

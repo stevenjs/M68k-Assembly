@@ -119,7 +119,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?i)\b([ad][0-7]|SP|PC|vbr)\b</string>
+			<string>(?i)\b([ad][0-7]|SP|PC|vbr|fp[0-7])\b</string>
 			<key>name</key>
 			<string>variable.language.register.m68k</string>
 		</dict>
@@ -176,6 +176,36 @@
 			<string>(?i)\billegal\b</string>
 			<key>name</key>
 			<string>invalid.illegal.opcode.m68k</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>(?i)\bf(abs|acos|add|asin|atan|atanh|cmp|cos|cosh|dadd|ddiv|dmul|div|dsub|etox|etoxm1|getexp|getman|int|intrz|log10|log2|logn|lognp1|mod|move|movecr|movem|mul|neg|nop|rem|restore|sadd|save|scale|sdiv|sgldiv|sglmul|sin|sincos|sinh|smul|sqrt|ssub|sub|tan|tanh|tentox|tst|twotox)(\.[bwlsdx])?\b</string>
+			<key>name</key>
+			<string>keyword.other.opcode.fpu.m68k</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>(?i)\bfb(cs|lo|ls|eq|ne|hi|cc|hs|lt|le|eq|ne|gt|ge|pl|mi|vc|vs)(\.[bsw])?\b</string>
+			<key>name</key>
+			<string>keyword.other.opcode.fpu.branch.m68k</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>(?i)\bfdb(cs|lo|ls|eq|ne|hi|cc|hs|lt|le|eq|ne|gt|ge|pl|mi|vc|vs|f|t|ra)(\.[bsw])?\b</string>
+			<key>name</key>
+			<string>keyword.other.opcode.fpu.dbcc.m68k</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>(?i)\bfs(cs|lo|ls|eq|ne|hi|cc|hs|lt|le|eq|ne|gt|ge|pl|mi|vc|vs|f|t)\b</string>
+			<key>name</key>
+			<string>keyword.other.opcode.fpu.scc.m68k</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>(?i)\bftrap(cs|lo|ls|eq|ne|hi|cc|hs|lt|le|eq|ne|gt|ge|pl|mi|vc|vs|f|t)\b</string>
+			<key>name</key>
+			<string>keyword.other.opcode.fpu.ftrapcc.m68k</string>
 		</dict>
 	</array>
 	<key>scopeName</key>
