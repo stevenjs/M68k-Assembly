@@ -76,7 +76,7 @@
       "name": "keyword.other.opcode.dbcc.m68k"
     },
     {
-      "match": "(?i)\\bdb(cs|lo|ls|eq|ne|hi|cc|hs|lt|le|eq|ne|gt|ge|pl|mi|vc|vs|f|t)\\b",
+      "match": "(?i)\\bs(cs|lo|ls|eq|ne|hi|cc|hs|lt|le|eq|ne|gt|ge|pl|mi|vc|vs|f|t)\\b",
       "name": "keyword.other.opcode.scc.m68k"
     },
     {
