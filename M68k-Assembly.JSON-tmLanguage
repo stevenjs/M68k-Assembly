@@ -48,11 +48,11 @@
     { "match": "(?<![a-zA-Z])[+-]?[0-9]+\\b",
       "name": "constant.numeric.decimal.m68k"
     },
-    { "match": "(?i)\\b([ad][0-7]|SP|PC)\\b",
+    { "match": "(?i)\\b([ad][0-7]|SP|PC|vbr)\\b",
       "name": "variable.language.register.m68k"
     },
     {
-      "match": "(?i)\\b(abcd|bchg|bclr|bset|chk|divs|divu|exg|jmp|jsr|lea|link|moveq|muls|mulu|nbcd|nop|pea|reset|rte|rtr|rts|sbcd|stop|swap|tas|trap|trapv|unlk)\\b",
+      "match": "(?i)\\b(abcd|bchg|bclr|bset|chk|divs|divu|exg|jmp|jsr|lea|link|movec|moveq|muls|mulu|nbcd|nop|pea|reset|rte|rtr|rts|sbcd|stop|swap|tas|trap|trapv|unlk)\\b",
       "name": "keyword.other.opcode.m68k"
     },
     {

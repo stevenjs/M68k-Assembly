@@ -119,13 +119,13 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?i)\b([ad][0-7]|SP|PC)\b</string>
+			<string>(?i)\b([ad][0-7]|SP|PC|vbr)\b</string>
 			<key>name</key>
 			<string>variable.language.register.m68k</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?i)\b(abcd|bchg|bclr|bset|chk|divs|divu|exg|jmp|jsr|lea|link|moveq|muls|mulu|nbcd|nop|pea|reset|rte|rtr|rts|sbcd|stop|swap|tas|trap|trapv|unlk)\b</string>
+			<string>(?i)\b(abcd|bchg|bclr|bset|chk|divs|divu|exg|jmp|jsr|lea|link|movec|moveq|muls|mulu|nbcd|nop|pea|reset|rte|rtr|rts|sbcd|stop|swap|tas|trap|trapv|unlk)\b</string>
 			<key>name</key>
 			<string>keyword.other.opcode.m68k</string>
 		</dict>
