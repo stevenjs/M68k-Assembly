@@ -80,6 +80,10 @@
       "name": "keyword.other.opcode.scc.m68k"
     },
     {
+      "match": "(?i)\\btrap(cs|lo|ls|eq|ne|hi|cc|hs|lt|le|eq|ne|gt|ge|pl|mi|vc|vs|f|t)(\\.[wl])?\\b",
+      "name": "keyword.other.opcode.trapcc.m68k"
+    },
+    {
       "match": "(?i)\\billegal\\b",
       "name": "invalid.illegal.opcode.m68k"
     }
