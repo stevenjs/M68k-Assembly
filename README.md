@@ -1,6 +1,6 @@
 # M68k-Assembly
 
-A [Sublime Text 2](http://www.sublimetext.com/) bundle for Motorola 68000
+A [Sublime Text](http://www.sublimetext.com/) bundle for Motorola 68000
 assembly language, based on the
 [M68k](https://github.com/stevenjs/M68k.tmbundle) bundle for
 [Textmate](http://macromates.com).
@@ -10,9 +10,9 @@ assembly language, based on the
 #### [Package Control][2]
 
 Open the Command Palette (Shift-Cmd-P in OS X, Shift-Ctrl-P in Linux/Windows).
-Select "Package Control: Install Package". Find and install M68k Assembly.
+Select "Package Control: Install Package". Find and install M68k-Assembly.
 
-Package Control will automatically keep M68k Assembly up to date. 
+Package Control will automatically keep M68k Assembly up to date.
 
 #### Manual Installation
 
@@ -30,15 +30,14 @@ Manual installation without git:
 
 ### Contributing
 
-You can send pull requests via GitHub. Do *not* edit the
-`M68k-Assembly.tmLanguage` file directly. Edit the
-`M68k-Assembly.JSON-tmLanguage` file instead and build the `.tmLanguage` file
-from it using the _JSON to Property List_ build tool in
+Pull requests welcome. Do *not* edit the `M68k-Assembly.tmLanguage` file
+directly. Edit the `M68k-Assembly.YAML-tmLanguage` file instead and build the
+`.tmLanguage` file from it using
 [AAAPackageDev](https://github.com/SublimeText/AAAPackageDev).
 
 ### License
 
-**M68k-Assembly Copyright © 2012 Steven Saunders**
+**M68k-Assembly Copyright © 2012,2015 Steven Saunders**
 
 ```
 This program is free software: you can redistribute it and/or modify
@@ -55,5 +54,5 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ```
 
-[1]: http://docs.sublimetext.info/en/latest/basic_concepts.html#the-packages-directory
+[1]:http://docs.sublimetext.info/en/latest/basic_concepts.html#the-packages-directory
 [2]:http://wbond.net/sublime_packages/package_control
