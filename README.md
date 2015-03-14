@@ -1,20 +1,20 @@
 # M68k-Assembly
 
-A [Sublime Text](http://www.sublimetext.com/) bundle for Motorola 68000
-assembly language, based on the
+A Motorola 68000 assembly language package for the
+[Sublime Text](http://www.sublimetext.com) editor, based on the
 [M68k](https://github.com/stevenjs/M68k.tmbundle) bundle for
 [Textmate](http://macromates.com).
 
 ### Installation
 
-#### [Package Control][2]
+##### [Package Control][2]
 
 Open the Command Palette (Shift-Cmd-P in OS X, Shift-Ctrl-P in Linux/Windows).
 Select "Package Control: Install Package". Find and install M68k-Assembly.
 
 Package Control will automatically keep M68k Assembly up to date.
 
-#### Manual Installation
+##### Manual Installation
 
 First you must locate the Sublime Text [packages folder][1], then:
 
@@ -55,4 +55,4 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ```
 
 [1]:http://docs.sublimetext.info/en/latest/basic_concepts.html#the-packages-directory
-[2]:http://wbond.net/sublime_packages/package_control
+[2]:https://packagecontrol.io/
