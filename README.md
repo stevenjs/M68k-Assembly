@@ -37,7 +37,7 @@ directly. Edit the `M68k-Assembly.YAML-tmLanguage` file instead and build the
 
 ### License
 
-**M68k-Assembly Copyright © 2012,2015 Steven Saunders**
+**M68k-Assembly Copyright © 2012, 2015 Steven Saunders**
 
 ```
 This program is free software: you can redistribute it and/or modify
